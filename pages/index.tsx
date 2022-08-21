@@ -2,29 +2,27 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { createClient } from '@supabase/supabase-js'
 
-export async function getStaticPropos() {
-  const supabaseAdmin = createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL || '',
-    process.env.SUPABASE_SERVICE_ROLE_KEY || '',
-  )
 
-  const { data } = await supabaseAdmin
-  .from('images')
-  .select('*')
-  .order('id')
-  return {
-    props: {
-      images: data,
-    },
-  }
+type Image = {
+  id: number,
+  href: string,
+  src: string,
+  name: string,
 }
 
-
-export default function Gallery() {
+function Gallery({ images }: { images: Image[]}) {
   return (
     <div>
+      <h1>Title</h1>
+      
       {/* Images will go here */}
-      <Image2 />
+      <div className="flex-column">
+        {images.map((image) => (
+          <div key={image.id}>
+            <BlurImage image={image} />
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
@@ -34,9 +32,30 @@ function Image2() {
     <i>Text</i>
   )
 }
-function BlurImage() {
+function BlurImage({ image }: { image: Image}) {
   return (
-    <i>Text</i>
+    <i>{image.name}</i>
   )
 }
 
+export default Gallery
+
+export const getStaticProps: GetStaticProps = async () => {
+  const supabaseAdmin = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL || '',
+    process.env.SUPABASE_SERVICE_ROLE_KEY || '',
+  )
+
+  const { data } = await supabaseAdmin
+  .from('images')
+  .select('*')
+  .order('id')
+
+  console.log("data",data)
+
+  return {
+    props: {
+      images: data,
+    },
+  }
+}
