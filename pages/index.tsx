@@ -3,6 +3,30 @@ import { useState } from 'react'
 import { createClient } from '@supabase/supabase-js'
 
 
+async function test() {
+  let result = getBotUpdates()
+  console.log("result", result)
+}
+
+const getBotUpdates = () =>
+  fetch(
+    "https://api.telegram.org/bot5389030729:AAF9fnNmzr2wf-B0PMgax0yDowu0DUILZYQ/getUpdates"
+  ).then((response) => response.json());
+
+const getUserTelegramId = async (uniqueString) => {
+  const { result } = await getBotUpdates();
+
+  const messageUpdates = result.filter(
+    ({ message }) => message?.text !== undefined
+  );
+
+  const userUpdate = messageUpdates.find(
+    ({ message }) => message.text === `/start ${uniqueString}`
+  );
+
+  return userUpdate.message.from.id;
+};
+
 type Image = {
   id: number,
   href: string,
@@ -13,7 +37,8 @@ type Image = {
 function Gallery({ images }: { images: Image[]}) {
   return (
     <div>
-      <h1>Title</h1>
+      <h1 onClick={() => { test() }}>Title</h1>
+
       
       {/* Images will go here */}
       <div className="flex-column">
@@ -52,6 +77,8 @@ export const getStaticProps = async () => {
   .order('id')
 
   console.log("data",data)
+
+  // test()
 
   return {
     props: {
