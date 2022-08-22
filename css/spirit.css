@@ -473,3 +473,4 @@
 
 /* ------------------------------------------ FILTERING ------------------------------------------ */
 .nosaturation {filter: saturate(0); }
+.none { display: none !important}
