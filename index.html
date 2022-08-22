@@ -23,6 +23,11 @@
 			margin: 0;
 			padding: 0;
 		}		
+
+		.theInputCalc {
+			font-size: 35px; padding: 15px; background: rgba(0,0,0,.25); color: white; border: none; width: 100px;
+			margin-right: 20px; border-bottom: 1px solid rgb(127,127,127); text-align: center;
+		}
 		.aText {
 		    font-family: 'Open Sans Condensed', sans-serif;
 		}
@@ -136,9 +141,9 @@
 			<a class="yt" href="#"><i class="fab fa-4x fa-youtube-square beige"></i></a> -->
 			<div class="flex-wrap px-5">
 				<a class="logo nooverflow " href="#" style="border-radius: 0 0 12px 12px"><img src="images/android-chrome-192x192.png"></a>
-				<a class=" tx-reset opacity-hover-75" href="#portfolio"><h3 class="ma-0 pa-3">Portafolio</h3></a>
-				<a class=" tx-reset opacity-hover-75" href="#price"><h3 class="ma-0 pa-3">Presupuesto</h3></a>
-				<a class=" tx-reset opacity-hover-75" href="#us"><h3 class="ma-0 pa-3">Nosotros</h3></a>
+				<a class=" tx-reset opacity-hover-75" href="#portfolio"><h2 class="ma-0 pa-3">Portafolio</h2></a>
+				<a class=" tx-reset opacity-hover-75" href="#price"><h2 class="ma-0 pa-3">Presupuesto</h2></a>
+				<a class=" tx-reset opacity-hover-75" href="#us"><h2 class="ma-0 pa-3">Nosotros</h2></a>
 				
 			</div>
 			
@@ -153,14 +158,14 @@
 		<div class="about">
 			<!-- <h1>About me.</h1> -->
 			<div class="about_me">
-				<h1 class="tx-xl">ABRAHAM DUNO</h1>
-				<div class=" tx-ls-2 tx-center">
+				<h1 class="tx-xxl">ABRAHAM DUNO</h1>
+				<div class="tx-lg tx-ls-2 tx-center">
 					<b class="opacity-75">Producción y Edición de </b>  <b class="tx-lg text-orange">Fotos y Videos</b>.
 				</div>
 				<div id="portfolio" ></div>
 			</div>
 		</div>
-		<hr class="w-50 opacity-10 mt-200 " >
+		<hr class="w-50 opacity-10 mt-200 block " >
 		<h1 class="tx-ls-10 opacity-50">PORTAFOLIO</h1>
 		<hr class="w-50 opacity-10  ">
 
@@ -486,7 +491,7 @@
 	</div>
 	
 
-	<br class="w-50 opacity-10 mt-200 " >
+	<br class="w-50 opacity-10 mt-200 block " >
 	<div id="price" style="transform: translateY(-50px);"></div>
 	<br class="w-50 opacity-10 my-8 " >
 	<h1 class="tx-ls-10 opacity-50 tx-center">PRESUPUESTO</h1>
@@ -497,45 +502,45 @@
 			
 			<!-- <h1><a href="https://instagram.com/tresduno" target="_blank" style="color: white">@tresduno</a></h1> -->
 			<!-- <hr style="width: 50%; opacity: .5"> -->
-			<h4 style="opacity: .5">Tabla de Precios</h4>
+			<h3 class="tx-lg" style="opacity: .5">Tabla de Precios</h3>
 
 			<div style="display: flex; width: 75%">
 				<i style="opacity: .5" class="fa fa-xl fa-camera"></i>
-				<span>1</span><h2 style="margin: 0; padding-bottom: 25px"> Foto</h2>
+				<span>1</span><small class="tx-xl ma-0 pb-5"> Foto</small>
 				<span style="flex: 1"></span>
 				<h2 style="opacity: .5; margin: 0; padding-bottom: 25px" id="photo_type_prices_md">$</h2>
 			</div>
 
 			<div style="display: flex; width: 75%">
 				<i style="opacity: .5" class="fa fa-xl fa-video"></i>
-				<span>1</span><h2 style="margin: 0; padding-bottom: 25px"> Video <small>(15-25 seg)</small> </h2>
+				<span>1</span><small class="tx-xl ma-0 pb-5"> Video <small>(15-25 seg)</small> </small>
 				<span style="flex: 1"></span>
 				<h2 style="opacity: .5; margin: 0; padding-bottom: 25px" id="video_type_prices_sm">$</h2>
 			</div>
 
 			<div style="display: flex; width: 75%">
 				<i style="opacity: .5" class="fa fa-xl fa-video"></i>
-				<span>1</span><h2 style="margin: 0; padding-bottom: 25px"> Video <small>(30-55 seg)</small> </h2>
+				<span>1</span><small class="tx-xl ma-0 pb-5"> Video <small>(30-55 seg)</small> </small>
 				<span style="flex: 1"></span>
 				<h2 style="opacity: .5; margin: 0; padding-bottom: 25px" id="video_type_prices_md">$</h2>
 			</div>
 
 			<div style="display: flex; width: 75%">
 				<i style="opacity: .5" class="fa fa-xl fa-video"></i>
-				<span>1</span><h2 style="margin: 0; padding-bottom: 25px"> Video <small>(60-90 seg)</small> </h2>
+				<span>1</span><small class="tx-xl ma-0 pb-5"> Video <small>(60-90 seg)</small> </small>
 				<span style="flex: 1"></span>
 				<h2 style="opacity: .5; margin: 0; padding-bottom: 25px" id="video_type_prices_lg">$</h2>
 			</div>
 
 			<!-- <div style="display: flex; width: 75%">
-				<span>1</span><h2 style="margin: 0; padding-bottom: 25px">Video <small>(+1 min)</small></h2>
+				<span>1</span><small class="tx-xl ma-0 pb-5">Video <small>(+1 min)</small></small>
 				<span style="flex: 1"></span>
 				<h2 style="opacity: .5; margin: 0; padding-bottom: 25px">$7/<small>min</small></h2>
 			</div> -->
 
 			<div style="display: flex; width: 75%">
 				<i style="opacity: .5" class="fa fa-xl fa-user-clock"></i>
-				<h2 style="margin: 0; padding-bottom: 25px">Hora de Trabajo</h2>
+				<small class="tx-xl ma-0 pb-5">Hora de Trabajo</small>
 				<span style="flex: 1"></span>
 				<h2 style="opacity: .5; margin: 0; padding-bottom: 25px">$1-5</h2>
 			</div>
@@ -544,68 +549,59 @@
 			<h1>Orden</h1>
 
 			<div class="flex-column">
-				<div >
-					<h4 style="text-align: center; flex: 1; opacity: .5"><i class="fa fa-camera"></i> Foto(s)</h4>
-					<span></span>
-					<h3 style="text-align: center; flex: 1">
-						<input type="number" name="photo_amount" placeholder="0" value="" min="0"  data-watch="photo_amount_changed"  data-keyup
-						style="font-size: 35px; padding: 15px; background: rgba(0,0,0,.25); color: white; border: none; width: 50%;
-						border-bottom: 1px solid rgb(127,127,127); text-align: center;">
-					</h3>
+				<div class="flex-column">
+					<h4 class="tx-lg ma-0 tx-center opacity-50" ><i class="fa fa-camera"></i> Foto(s)</h4>
+					<input type="number" name="photo_amount" placeholder="0" value="" min="0"  data-watch="photo_amount_changed"  data-keyup
+					style="font-size: 35px; padding: 15px; background: rgba(0,0,0,.25); color: white; border: none; width: 50%;
+					border-bottom: 1px solid rgb(127,127,127); text-align: center;">
 				</div>
 				<div class="flex-wrap">
 					<h3 style="text-align: center; flex: 1; opacity: .5" class="flex-wrap">
 						<div class="flex-column flex-align-start">
-							<label ><i class="fa fa-video"></i> 15-25s</label>
+							<label class="tx-lg" ><i class="fa fa-video"></i> 15-25s</label>
 							<input type="number" name="video_type_sm" value="0" min="0" data-watch="video_type_changed" data-keyup data-video_type_size="sm" placeholder="0" 
-							style="font-size: 35px; padding: 15px; background: rgba(0,0,0,.25); color: white; border: none; width: 100px;
-							margin-right: 20px; border-bottom: 1px solid rgb(127,127,127); text-align: center;">
+							class="theInputCalc">
 						</div>
 
 						<!-- <br> -->
 
 						<div class="flex-column flex-align-start">
-							<label><i class="fa fa-video"></i> 30-55s</label>
+							<label class="tx-lg"><i class="fa fa-video"></i> 30-55s</label>
 							<input type="number" name="video_type_md" value="0" min="0" data-watch="video_type_changed" data-keyup data-video_type_size="md" placeholder="0" 
-							style="font-size: 35px; padding: 15px; background: rgba(0,0,0,.25); color: white; border: none; width: 100px;
-							margin-right: 20px; border-bottom: 1px solid rgb(127,127,127); text-align: center;">
+							class="theInputCalc">
 						</div>
 
 						<!-- <br> -->
 
 						<div class="flex-column flex-align-start">
-							<label ><i class="fa fa-video"></i> 60-90s</label>
+							<label class="tx-lg" ><i class="fa fa-video"></i> 60-90s</label>
 							<input type="number" name="video_type_lg" value="0" min="0" data-watch="video_type_changed" data-keyup data-video_type_size="lg" placeholder="0" 
-							style="font-size: 35px; padding: 15px; background: rgba(0,0,0,.25); color: white; border: none; width: 100px;
-							margin-right: 20px; border-bottom: 1px solid rgb(127,127,127); text-align: center;">
+							class="theInputCalc">
 						</div>
 
 					</h3>
 				</div>
 
-					<div style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-						<h4 style="text-align: center; flex: 1; opacity: .5">Info.</h4>
-						<span></span>
-						<h2 style="text-align: center;  width: 75%;">
-							<textarea name="desc" placeholder="Descripcion" value=""
-							style="font-size: 25px; padding: 5px; background: transparent; color: white; border: none;
-							border-bottom: 1px solid rgb(127,127,127); width: 100%"></textarea>
-						</h2>
-					</div>
+				<div class="flex w-100">
+					<textarea name="desc" placeholder="Información Extra" value="" class="ma-5 pa-3 w-100" 
+					style="font-size: 25px; background: transparent; color: white; border: 2px solid #77777755;"></textarea>
+				</div>
 
 					<div class="flex-wrap">
 							<i class="fa fa-user-clock"></i>
-							<label style="margin: 0 5px 0px 20px">Hora de Trabajo</label>
+							<label class="tx-lg" style="margin: 0 5px 0px 20px">Hora de Trabajo</label>
+						</div>
+					<div class="flex-wrap">
 							<span style="padding-right: 10px; margin-right: 10px"> </span>
 							<input type="number" name="work_hour_amount" value="1" min="1" data-watch="work_hour_amount_changed" data-keyup placeholder="1" 
-							style="font-size: 35px; padding: 15px; background: rgba(0,0,0,.25); color: white; border: none; width: 100px;
-							margin-right: 20px; border-bottom: 1px solid rgb(127,127,127); text-align: center;">
-							<small>hrs</small>
-							<span>x</span>
-							<small>$</small>
+							class="theInputCalc">
+							<div class="flex tx-lg opacity-50">
+								<small>hrs</small>
+								<span>x</span>
+								<small>$</small>
+							</div>
 							<input type="number" name="work_hour_price" value="1" min="1" data-watch="work_hour_price_changed" data-keyup placeholder="1" 
-							style="font-size: 35px; padding: 15px; background: rgba(0,0,0,.25); color: white; border: none; width: 100px;
-							margin-right: 20px; border-bottom: 1px solid rgb(127,127,127); text-align: center;">
+							class="theInputCalc">
 					</div>
 				</div>
 			</div>
@@ -621,18 +617,21 @@
 	<!-- <hr class="w-50 opacity-10  " >
 	<h1 class="tx-ls-10 opacity-50 tx-center">PRESUPUESTO</h1>
 	<hr class="w-50 opacity-10 mb-200 "> -->
-	<br class="w-50 opacity-10 mt-200 " >
+	<br class="w-50 opacity-10 mt-200 block" >
 	<div id="us"></div>
-	<hr class="w-50 opacity-10 mt-200 " >
+	<hr class="w-50 opacity-10 mt-200 block " >
 
 	<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1d1e20" fill-opacity="1" d="M0,224L48,208C96,192,192,160,288,128C384,96,480,64,576,74.7C672,85,768,139,864,154.7C960,171,1056,149,1152,133.3C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
 
 	<h1 class=" tx-ls-10 opacity-50 tx-center" style="transform: translateY(-5px); ">
 		<span style="background: #00000033" class="pa-5 border-r-10">¿Quiénes Somos?</span>
 	</h1>
-	<div class="tx-ls-2 my-5 pa-5 flex-center"  >
+	<div class="tx-ls-2 my-5 pa-5 flex-column"  >
 		<p style="max-width: 777px" class="tx-lg">
-			Somos un equipo de trabajo de producción audiovisual constituido por dos profesionales con conocimientos de marketing, idiomas modernos, <b class="text-green">producción y edición de fotos y videos</b>, desarrollo web y más. Organizamos y ejecutamos todas las etapas de producción necesarias para <b class="text-orange">transmitir la misión y visión</b> de entidades empresas e individuos.
+			Somos un equipo de trabajo de producción audiovisual constituido por dos profesionales con conocimientos de marketing, idiomas modernos, <b class="text-green">producción y edición de fotos y videos</b>, desarrollo web y más.
+		</p>
+		<p style="max-width: 777px" class="tx-lg">
+			Organizamos y ejecutamos todas las etapas de producción necesarias para <b class="text-orange">transmitir la misión y visión</b> de entidades, empresas e individuos.
 		</p>
 	</div>
 
@@ -648,6 +647,8 @@
 				<a class="logo" href="#"><img class="border-r-100p" style="width:64px; box-shadow: 0 0 25px #ffffff77" src="images/android-chrome-192x192.png"></a>
 				
 			</div>
+	<br class="w-50 opacity-10 mt-200 block " >
+
 	<br class="w-50 opacity-10  my-8">
 	<script type="text/javascript">
 		class jQueryTemplateView {
